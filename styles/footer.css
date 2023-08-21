@@ -1,0 +1,66 @@
+hr {
+    margin: 0;
+}
+
+.estiloFooter {
+    padding: 2em;
+    display: flex;
+    background-color: var(--cor-header);
+    padding: 1em;
+    border: 1px solid var(--cor-borda);
+}
+
+.estiloFooter_titulo {
+    font-family: var(--font-primaria);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.estiloFooter_titulo_secundario {
+    display: none;
+}
+
+.estiloFooter_listas {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .estiloFooter {
+        display: flex;
+        padding: 0,5em;
+        justify-content: space-around;
+    }
+    
+    .estiloFooter_titulo {
+        display: none;
+    }
+
+    .estiloFooter_titulo_secundario {
+        display: block;
+        font-family: var(--font-primaria);
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+
+    .estiloFooter_listas {
+        display: block;
+        margin: 0.5em;
+
+    }
+
+    .estiloFooter_listas_titulo {
+        font-family: var(--font-primaria);
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .estiloFooter_listas_apoiadores {
+        padding: 1em;
+        font-family: var(--font-primaria);
+        font-size: 1rem;
+        font-weight: 400;
+        margin-left: 0.5em;
+        justify-content: center;
+    }
+
+}
